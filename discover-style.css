@@ -1,0 +1,170 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #222;
+    scroll-behavior: smooth;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    height: 100vh;
+    background: url('images/hero-discover.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    max-width: 700px;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    padding: 12px 30px;
+    background: #E67E22;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #ca6b1e;
+  }
+  
+  /* SECTION BASE */
+  section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* INTRO SECTION */
+  .intro-section h2,
+  .services-section h2,
+  .projects-section h2,
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  /* SERVICES */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 2rem;
+  }
+  
+  .service-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* PROJECT SLIDER */
+  .projects-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    margin-top: 2rem;
+    padding-bottom: 10px;
+  }
+  
+  .project-slide {
+    min-width: 300px;
+    background: #eee;
+    border-radius: 16px;
+    scroll-snap-align: start;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .project-slide:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-slide p {
+    padding: 10px;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* CTA SECTION */
+  .cta-section {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  
+  .cta-section .btn-primary {
+    margin-top: 20px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px)
+  

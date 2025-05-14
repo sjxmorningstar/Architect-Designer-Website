@@ -1,0 +1,307 @@
+<!-- 
+  Author : Shailesh Santosh Jadhav
+  Date : 01/05/2025
+  Languages Used : HTML, CSS, JS
+  Topic : Interior & Exterior Designers Website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architect Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+<!-- Animate On Scroll Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+  });
+</script>
+
+</head>
+<body>
+
+  <div class="spinner-container">
+    <div class="circles">
+      <div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hamburger-menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+      <span>Close</span>
+    </div>
+
+    <header class="header">
+      <div class="img-wrapper">
+        <img src="images/bg.jpg" />
+      </div>
+      <div class="banner">
+        <h1>Architecture & Interior Design</h1>
+        <p>Crafting timeless spaces that blend form, function, and elegance. Where imagination meets structure.</p>
+        <a href="discover.html" class="btn-discover">Discover now</a>
+
+
+      </div>
+    </header>
+
+    <section class="sidebar">
+      <ul class="menu">
+        <li><a href="#" class="menu-link" data-content="Home">Home</a></li>
+        <li><a href="#" class="menu-link" data-content="About Us">About Us</a></li>
+        <li><a href="#" class="menu-link" data-content="Team">Team</a></li>
+        <li><a href="#" class="menu-link" data-content="Pricing">Pricing</a></li>
+        <li><a href="#" class="menu-link" data-content="Contact">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/adrenalin__15/"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/sjxmorningstar?s=21"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="section-header">
+        <h1 class="section-heading">About Us</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="service-header">
+            <i class="fas fa-pen-nib"></i>
+            <h3>Interior</h3>
+          </div>
+          <p class="service-text">
+            We specialize in creating elegant, functional interiors tailored to your lifestyle—balancing comfort with cutting-edge design.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-header">
+            <i class="fas fa-paint-roller"></i>
+            <h3>Exterior</h3>
+          </div>
+          <p class="service-text">
+            Our exterior designs reflect bold aesthetics and sustainable choices—transforming the outside to match your vision.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-header">
+            <i class="fas fa-pencil-alt"></i>
+            <h3>Design</h3>
+          </div>
+          <p class="service-text">
+            From sketches to blueprints, we conceptualize innovative designs that push boundaries while maintaining purpose.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-header">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Decoration</h3>
+          </div>
+          <p class="service-text">
+            We bring spaces to life with bespoke décor solutions that capture personality, warmth, and character.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-header">
+            <i class="fas fa-ruler-combined"></i>
+            <h3>Planning</h3>
+          </div>
+          <p class="service-text">
+            Strategic and detailed planning is at the heart of every successful project—we map every step from idea to execution.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-header">
+            <i class="far fa-building"></i>
+            <h3>Execution</h3>
+          </div>
+          <p class="service-text">
+            We execute each project with precision, ensuring quality craftsmanship and timely delivery for exceptional outcomes.
+          </p>
+        </div>
+        <div class="about-us-img-wrapper">
+          <img src="images/house.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="section-header">
+        <h1 class="section-heading">Our Team</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="cards-wrapper">
+        <div class="card" data-tilt>
+          <div class="card-img-wrapper">
+            <img src="images/person-3.jpg" alt="CEO" />
+          </div>
+          <div class="card-info">
+            <h2>Shailesh Jadhav</h2>
+            <h3>CEO</h3>
+            <p>
+              "Visionary leadership meets architectural finesse. Dedicated to shaping environments that inspire and endure."
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="card" data-tilt>
+          <div class="card-img-wrapper">
+            <img src="images/person-2.jpg" alt="Designer" />
+          </div>
+          <div class="card-info">
+            <h2>Aishwarya Roy</h2>
+            <h3>Designer</h3>
+            <p>
+              "Designing with soul, Aishwarya crafts interiors that are both artful and functional, reflecting your identity in every detail."
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="card" data-tilt>
+          <div class="card-img-wrapper">
+            <img src="images/person-1.jpg" alt="Architect" />
+          </div>
+          <div class="card-info">
+            <h2>Salman Khan</h2>
+            <h3>Architect</h3>
+            <p>
+              "Bringing architectural dreams to life with structural integrity and creative brilliance—Salman delivers the foundation for future-ready spaces."
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-left"></div>
+        <div class="contact-right">
+          <h1 class="contact-heading">Contact</h1>
+          <form>
+            <div class="input-group">
+              <input type="text" class="field" />
+              <label class="input-label">Full Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" class="field" />
+              <label class="input-label">Email</label>
+            </div>
+            <div class="input-group">
+              <textarea class="field"></textarea>
+              <label class="message">Message</label>
+            </div>
+            <input type="submit" class="submit-btn" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+<!-- ✨ Testimonials Section -->
+<section class="testimonials" id="testimonials">
+  <div class="section-header">
+    <h1 class="section-heading">Testimonials</h1>
+    <div class="underline"></div>
+  </div>
+  <div class="testimonial-wrapper">
+    <div class="testimonial-card" data-aos="fade-up">
+      <p>"The team transformed my space into something extraordinary. Truly professional and creative!"</p>
+      <h3>- Ganesh Patil., Homeowner</h3>
+    </div>
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+      <p>"Attention to detail and perfect execution. Highly recommend their services!"</p>
+      <h3>- Narendra Modi., Business Owner</h3>
+    </div>
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+      <p>"They captured my vision perfectly and exceeded expectations."</p>
+      <h3>- Donald Trump., Interior Enthusiast</h3>
+    </div>
+  </div>
+</section>
+
+<!-- 🖼️ Project Gallery Section -->
+<section class="projects" id="projects">
+  <div class="section-header">
+    <h1 class="section-heading">Our Projects</h1>
+    <div class="underline"></div>
+  </div>
+  <div class="gallery">
+    <div class="gallery-item" data-aos="zoom-in"><img src="images/project1.jpg" alt="Modern Villa"></div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="images/project2.jpg" alt="Office Interior"></div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="images/project3.jpg" alt="Luxury Living Room"></div>
+  </div>
+</section>
+
+<!-- 📨 Newsletter Subscription -->
+<section class="newsletter" id="subscribe">
+  <div class="newsletter-container" data-aos="fade-up">
+    <h2>Stay Inspired</h2>
+    <p>Subscribe to receive updates on our latest projects and design tips.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+<!-- 🔍 Discover More Section -->
+<section class="discover" id="discover">
+  <div class="section-header">
+    <h1 class="section-heading">Discover Our Vision</h1>
+    <div class="underline"></div>
+  </div>
+  <div class="discover-content" data-aos="fade-up">
+    <p class="discover-intro">
+      At the heart of every design is a story — and we’re here to tell yours through immersive, purposeful spaces. From luxury homes to visionary commercial architecture, we blend creativity, strategy, and craftsmanship to shape environments that inspire.
+    </p>
+    <div class="features-grid">
+      <div class="feature" data-aos="fade-right">
+        <div class="icon-circle"><i class="fas fa-lightbulb"></i></div>
+        <h3>Creative Ideation</h3>
+        <p>We turn imagination into blueprint, crafting distinctive concepts grounded in your personality and lifestyle.</p>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <div class="icon-circle"><i class="fas fa-drafting-compass"></i></div>
+        <h3>Smart Planning</h3>
+        <p>Design meets logic — every layout is strategically optimized for comfort, aesthetics, and functionality.</p>
+      </div>
+      <div class="feature" data-aos="fade-left">
+        <div class="icon-circle"><i class="fas fa-tools"></i></div>
+        <h3>Flawless Execution</h3>
+        <p>With detail-driven delivery and artisan-level precision, we bring your vision to life — beautifully and reliably.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="copyright">
+          Copyright &copy; 2025, shaileshjadhav1613@gmail.com - All Rights Reserved
+        </p>
+        <div class="social-list">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/adrenalin__15/"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/sjxmorningstar?s=21"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="scroll-btn">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="tilt.js"></script>
+</body>
+</html>
