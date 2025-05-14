@@ -135,10 +135,12 @@
   </header>
 
   <section class="contact-section" data-aos="fade-up">
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="Your Message" required></textarea>
+    <!-- Updated the action URL to Formspree -->
+    <form class="contact-form" action="https://formspree.io/f/xrbqrpln" method="POST">
+      <!-- Added name attributes for Formspree to work properly -->
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
 
