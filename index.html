@@ -57,10 +57,12 @@
     <section class="sidebar">
       <ul class="menu">
         <li><a href="#" class="menu-link" data-content="Home">Home</a></li>
-        <li><a href="#" class="menu-link" data-content="About Us">About Us</a></li>
+        <li><a href="discover.html" class="menu-link" data-content="About Us">About Us</a></li>
+
         <li><a href="#" class="menu-link" data-content="Team">Team</a></li>
         <li><a href="#" class="menu-link" data-content="Pricing">Pricing</a></li>
-        <li><a href="#" class="menu-link" data-content="Contact">Contact</a></li>
+        <li><a href="contact.html" class="menu-link" data-content="Contact">Contact</a></li>
+
       </ul>
       <div class="social-media">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -182,30 +184,7 @@
         </div>
       </div>
     </section>
-
-    <section class="contact">
-      <div class="contact-wrapper">
-        <div class="contact-left"></div>
-        <div class="contact-right">
-          <h1 class="contact-heading">Contact</h1>
-          <form>
-            <div class="input-group">
-              <input type="text" class="field" />
-              <label class="input-label">Full Name</label>
-            </div>
-            <div class="input-group">
-              <input type="email" class="field" />
-              <label class="input-label">Email</label>
-            </div>
-            <div class="input-group">
-              <textarea class="field"></textarea>
-              <label class="message">Message</label>
-            </div>
-            <input type="submit" class="submit-btn" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </section>
+    
 <!-- ✨ Testimonials Section -->
 <section class="testimonials" id="testimonials">
   <div class="section-header">
@@ -246,12 +225,16 @@
   <div class="newsletter-container" data-aos="fade-up">
     <h2>Stay Inspired</h2>
     <p>Subscribe to receive updates on our latest projects and design tips.</p>
-    <form class="newsletter-form">
+    <form class="newsletter-form" id="newsletter-form">
       <input type="email" placeholder="Enter your email" required />
       <button type="submit">Subscribe</button>
     </form>
+    <div class="thank-you-popup" id="thank-you-popup">
+      <p>THANK YOU FOR SUBSCRIBING.<br>YOU WILL GET REGULAR UPDATES</p>
+    </div>
   </div>
 </section>
+
 <!-- 🔍 Discover More Section -->
 <section class="discover" id="discover">
   <div class="section-header">
@@ -299,6 +282,18 @@
       <i class="fas fa-arrow-up"></i>
     </a>
   </div>
+<script>
+  document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const popup = document.getElementById("thank-you-popup");
+    popup.classList.add("active");
+
+    setTimeout(() => {
+      popup.classList.remove("active");
+      this.reset();
+    }, 3000); // Popup shows for 3 seconds
+  });
+</script>
 
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

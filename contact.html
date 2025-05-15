@@ -2,130 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Baloo Da 2', cursive;
-      margin: 0;
-      background-color: #fdfdfd;
-      color: #333;
-    }
-
-    header {
-      background-image: url('images/bg.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 100px 20px;
-      color: #fff;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    .contact-section {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 20px;
-    }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 1rem;
-      width: 100%;
-    }
-
-    .contact-form textarea {
-      resize: vertical;
-      height: 150px;
-    }
-
-    .contact-form button {
-      padding: 15px;
-      border: none;
-      background-color: #333;
-      color: white;
-      border-radius: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .contact-form button:hover {
-      background-color: #555;
-    }
-
-    .contact-info {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .contact-info p {
-      font-size: 1.1rem;
-      margin: 10px 0;
-    }
-
-    .contact-info a.call-btn {
-      background-color: #e91e63;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .contact-info a.call-btn:hover {
-      background-color: #c2185b;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 30px 10px;
-      margin-top: 50px;
-    }
-
-    .social-list a {
-      margin: 0 10px;
-      color: white;
-      font-size: 1.2rem;
-      transition: color 0.3s ease;
-    }
-
-    .social-list a:hover {
-      color: #e91e63;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -135,9 +17,11 @@
   </header>
 
   <section class="contact-section" data-aos="fade-up">
-    <!-- Updated the action URL to Formspree -->
+    <div class="illustration">
+      <img src="images/contact-illustration.svg" alt="Contact Illustration" />
+    </div>
+
     <form class="contact-form" action="https://formspree.io/f/xrbqrpln" method="POST">
-      <!-- Added name attributes for Formspree to work properly -->
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
@@ -148,10 +32,19 @@
       <p>OR Call us directly</p>
       <a href="tel:+919309771211" class="call-btn"><i class="fas fa-phone"></i> +91 93097 71211</a>
     </div>
+
+    <div class="map-container" data-aos="fade-up" data-aos-delay="300">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8817752817737!2d74.21367661420959!3d16.705429687202378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10002c6df3f1f%3A0x41d7aa5d5c0e1712!2sKolhapur%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1584366412747!5m2!1sen!2sin" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
   </section>
 
   <footer>
-    <p>Copyright &copy; 2025, <a href="mailto:shaileshjadhav1613@gmail.com" style="color:white;">shaileshjadhav1613@gmail.com</a> - All Rights Reserved</p>
+    <p>Copyright &copy; 2025, 
+      <a href="mailto:shaileshjadhav1613@gmail.com" style="color:white;">shaileshjadhav1613@gmail.com</a> - All Rights Reserved
+    </p>
     <div class="social-list">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.instagram.com/adrenalin__15/"><i class="fab fa-instagram"></i></a>
@@ -159,9 +52,12 @@
     </div>
   </footer>
 
+  <!-- Floating call button -->
+  <a href="tel:+919309771211" class="floating-call-btn">
+    <i class="fas fa-phone"></i>
+  </a>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
