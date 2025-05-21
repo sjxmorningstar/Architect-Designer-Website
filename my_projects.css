@@ -45,13 +45,19 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* Uploadcare box section */
 .upload-section {
   margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .upload-section p {
   font-size: 1rem;
   color: #555;
+  margin-top: 12px;
 }
 
 /* Gallery grid layout */
@@ -92,6 +98,28 @@ h2 {
   to { opacity: 1; transform: scale(1); }
 }
 
+/* Button: View All Projects */
+.projects-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
+.projects-btn:hover {
+  background-color: #187bcd;
+  transform: translateY(-2px);
+}
+
 /* Responsive tweaks */
 @media (max-width: 600px) {
   .container {
@@ -109,5 +137,10 @@ h2 {
 
   .project-image {
     height: 150px;
+  }
+
+  .projects-btn {
+    font-size: 0.95rem;
+    padding: 10px 22px;
   }
 }

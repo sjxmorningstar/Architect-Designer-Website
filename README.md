@@ -2,7 +2,7 @@
 
 A Architect design Page for marketing of their own business. Responsive page design using hiver effects and box, forms, etc.
 
-**Link to the Website**: https://architectdesignwebsite.netlify.app/
+**Link to the Website**: 
 
 # How It's Made: 
 

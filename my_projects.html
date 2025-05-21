@@ -5,11 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
     <link rel="stylesheet" href="my-projects.css" />
+
     <!-- Uploadcare Widget -->
     <script>
       UPLOADCARE_PUBLIC_KEY = '52c4a60176a25ddacd79';
     </script>
     <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+    <style>
+      /* Background and container */
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        color: #333;
+      }
+
+      .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        z-index: -1;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-top: 40px;
+        font-size: 1.8rem;
+        color: #444;
+      }
+
+      /* Upload Section */
+      .upload-section {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+
+      .upload-section p {
+        margin-top: 15px;
+        font-size: 1rem;
+        color: #666;
+      }
+
+      /* Gallery Styling */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .image-wrapper {
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .image-wrapper:hover {
+        transform: scale(1.05);
+      }
+
+      .project-image {
+        max-width: 250px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* Button to Our Projects */
+      .projects-btn {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 12px 25px;
+        background: #3e8ed0;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+
+      .projects-btn:hover {
+        background: #3272ac;
+      }
+    </style>
   </head>
   <body>
     <div class="background"></div>
@@ -30,8 +129,12 @@
 
       <h2>🖼️ Uploaded Images</h2>
       <div class="gallery" id="gallery"></div>
+
+      <!-- Beautiful Button to Our Projects Page -->
+      <a href="projects.html" class="projects-btn">🔗 View All Projects</a>
     </div>
 
+    <!-- Uploadcare JS Logic -->
     <script>
       const uploader = uploadcare.MultipleWidget('#imageUploader');
 
