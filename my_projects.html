@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="stylesheet" href="my-projects.css" />
+    <!-- Uploadcare Widget -->
+    <script>
+      UPLOADCARE_PUBLIC_KEY = '52c4a60176a25ddacd79';
+    </script>
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <div class="container">
+      <h1>📁 My Projects</h1>
+
+      <div class="upload-section">
+        <input
+          type="hidden"
+          role="uploadcare-uploader"
+          data-clearable="true"
+          data-multiple="true"
+          id="imageUploader"
+        />
+        <p>📤 Click the box above to upload images from your PC</p>
+      </div>
+
+      <h2>🖼️ Uploaded Images</h2>
+      <div class="gallery" id="gallery"></div>
+    </div>
+
+    <script>
+      const uploader = uploadcare.MultipleWidget('#imageUploader');
+
+      uploader.onUploadComplete((groupInfo) => {
+        groupInfo.files().forEach(filePromise => {
+          filePromise.done(fileInfo => {
+            const imageUrl = fileInfo.cdnUrl;
+            const gallery = document.getElementById('gallery');
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'image-wrapper';
+
+            const img = document.createElement('img');
+            img.src = imageUrl;
+            img.alt = 'Uploaded Project';
+            img.className = 'project-image';
+
+            wrapper.appendChild(img);
+            gallery.appendChild(wrapper);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
